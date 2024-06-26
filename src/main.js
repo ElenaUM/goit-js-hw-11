@@ -57,6 +57,20 @@ function onPhotosSearch(query) {
       gallery.refresh();
       gallery.on('show.simplelightbox');
     })
+
+    .catch(error => {
+      iziToast.error({
+        message:
+          'Sorry, there was an error fetching images. Please try again later!',
+        maxWidth: '322px',
+        iconUrl: closeImageURL,
+        backgroundColor: '#EF4040',
+        messageColor: '#fff',
+        titleColor: '#fff',
+        theme: 'dark',
+      });
+    })
+
     .finally(() => hideLoader());
 }
 
