@@ -5,7 +5,7 @@ export function getPhotos(query) {
   query = query.toLowerCase().split(' ').join('+').toString();
 
   const params = new URLSearchParams({
-    key: '44447717-1f020d7968b38ed176a967b4c',
+    key: '44587704-58c585ec777ca11520d849bef',
     q: query,
     image_type: 'photo',
     orientation: 'horizontal',
